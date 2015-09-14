@@ -5,6 +5,10 @@ body{
   position: relative;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
 
 .navigationBar{
   background-color: rgba(0,0,0,0);
@@ -13,6 +17,14 @@ body{
   text-align: right;
   position: fixed;
   z-index: 3;
+}
+
+.nameHeader{
+  color: white;
+  position: absolute;
+  left: 40px;
+  line-height: 50px;
+  font-size: 26px;
 }
 
 .navigationBar li{
@@ -54,7 +66,7 @@ body{
 .title{
   font-size: 36px;
   color: grey;
-  margin: 30px 0;
+  margin: 10px 0 20px 0;
 }
 
 .module{
@@ -141,19 +153,20 @@ body{
 
 .portfolioContainer{
   background-color: rgba(243,243,243,1);
-  padding-top: 40px;
+  padding: 40px 0;
 }
 
 
 .profile{
   width: 100%;
-  height: 300px;
+  height: 550px;
   padding-top: 30px;
 }
 
 .profilePic{
   width: 20%;
   max-width: 260px;
+  min-width: 185px;
   border-radius: 50%;
   border: 10px solid rgba(243,243,243,1);
   margin-bottom: 20px;
@@ -167,4 +180,84 @@ body{
 .role{
   color: rgba(119,119,119,1);
   font-size: 17px;
+}
+
+.profileLinkContainer{
+  padding: 10px 0;
+}
+
+.profileLink{
+  width: 50px;
+  margin: 0 5px;
+}
+/*CONTACT CSS*/
+
+.contactContainer{
+  background-color: rgba(42,42,42,1);
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.contactBox{
+  width: 470px;
+  /*border: 1px solid grey;*/
+  border-radius: 5px;
+  padding-top:11px;
+  min-height: 300px;
+  text-align: left;
+  margin: 50px auto 0 auto;
+  background-color: rgba(34,36,40,1.0);
+  display: inline-block;
+}
+
+.contactBox h3{
+  text-align: center;
+  color: white;
+  font-size: 23px;
+}
+
+.contactBox hr{
+  width: 80%;
+}
+
+.contactBox div{
+  margin-top: 10px;
+}
+
+.contactBox .messageInput, .contactBox label{
+  width: 63%;
+  height: 30px;
+  margin: 10px 0 20px 17%;
+  padding-left: 10px;
+  border: none;
+  border-radius: 3px;
+}
+
+.contactBox label{
+  color: white;
+}
+
+.contactBox hr{
+  margin-bottom: 20px;
+}
+
+.messageBox{
+  width: 63%;
+  height: 140px;
+  margin: 10px 0 20px 17%;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 5px 5px;
+}
+
+.contactBox button{
+  color: white;
+  background-color: rgba(0,150,136,1);
+  width: 100px;
+  height: 39px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  margin: 10px 10px 30px 17%;
 }
