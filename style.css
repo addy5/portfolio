@@ -1,0 +1,170 @@
+body{
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+}
+
+
+.navigationBar{
+  background-color: rgba(0,0,0,0);
+  height: 50px;
+  width:100%;
+  text-align: right;
+  position: fixed;
+  z-index: 3;
+}
+
+.navigationBar li{
+  font-size: 20px;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  left:-50px;
+  font-weight: 300;
+}
+
+.banner{
+  width: 100%;
+  height: 550px;
+  background-image: url('./baseFilter.jpg');
+  background-size: cover;
+}
+
+.welcome{
+  color: white;
+  font-size: 31px;
+  font-weight: 300;
+  position: relative;
+  top: 185px;
+}
+
+.bannerGreeting{
+  color: white;
+  font-size: 45px;
+  font-weight: 600;
+  position: relative;
+  top: 210px;
+}
+
+.title{
+  font-size: 36px;
+  color: grey;
+  margin: 30px 0;
+}
+
+.module{
+  /*border: 1px solid grey;*/
+  width: 35%;
+  min-width: 400px;
+  height: 400px;
+  margin: 20px 4%;
+  display: inline-block;
+  position: relative;
+  background-color: white;
+  vertical-align: top;
+}
+
+.background{
+  position: absolute;
+  top: 0;
+  bottom: 25%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+  text-align: left;
+  font-size: 17px;
+  font-weight: 300;
+  z-index: 2;
+  margin: 0;
+  display: none;
+}
+
+.frontend, .backend, .resources{
+  display:inline-block;
+  width:35%;
+  height:26%;
+  padding: 8% 3% 4% 10%;
+  line-height: 22px;
+  vertical-align: top;
+}
+
+.modalTitle{
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.projectImage{
+  height: 75%;
+  width: 100%;
+  position: relative;
+  top:0;
+  background-size: cover;
+  z-index: 1;
+}
+
+.imageSDF{
+  background-image: url('./sdf.png');
+}
+
+.imageHoldem{
+  background-image: url('./holdem.png');
+}
+
+.imageSygns{
+  background-image: url('./sygns.png');
+}
+
+.imageTeachMe{
+  background-image: url('./teachMe1.png');
+}
+
+.projectDescription{
+  padding: 15px;
+}
+
+.projectDetails{
+  color: rgba(119,119,119,1);
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.services{
+  background: white;
+  width: 100%;
+  height: 300px;
+}
+
+.portfolioContainer{
+  background-color: rgba(243,243,243,1);
+  padding-top: 40px;
+}
+
+
+.profile{
+  width: 100%;
+  height: 300px;
+  padding-top: 30px;
+}
+
+.profilePic{
+  width: 20%;
+  max-width: 260px;
+  border-radius: 50%;
+  border: 10px solid rgba(243,243,243,1);
+  margin-bottom: 20px;
+}
+
+.name{
+  font-size:21px;
+  margin-bottom: 6px;
+}
+
+.role{
+  color: rgba(119,119,119,1);
+  font-size: 17px;
+}
