@@ -2,15 +2,33 @@ $(document).ready(function(){
   console.log('jquery');
     var navigationBar = $('.navigationBar');
     var scroll_pos = 0;
+    var triangle = $('.triangle');
 
     $(document).scroll(function() {
         scroll_pos = $(this).scrollTop();
         if(scroll_pos > 500) {
-          navigationBar.css('background-color','rgba(0,0,0,1)');
+          navigationBar.css('background-color','rgba(42,42,42,1)');
+          triangle.css('display','inline-block');
         } else {
           navigationBar.css('background-color','rgba(0,0,0,0)');
+          triangle.css('display','none');
         }
     });
+
+    // $('#nav nav a').on('click', function(event) {
+    //   $(this).parent().find('a').removeClass('active');
+    //   $(this).addClass('active');
+    // });
+
+    // $(window).on('scroll', function() {
+    //     $('.target').each(function() {
+    //         if($(window).scrollTop() >= $(this).position().top) {
+    //             var id = $(this).attr('id');
+    //             $('#nav nav a').removeClass('active');
+    //             $('#nav nav a[href=#'+ id +']').addClass('active');
+    //         }
+    //     });
+    // });
 
   var projectSDF = $('.projectSDF');
   var imageSDF = $('.imageSDF');

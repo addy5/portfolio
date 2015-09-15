@@ -19,11 +19,11 @@
   <body>
 
     <ul class="navigationBar">
-      <li>Services</li>
-      <li>Portfolio</li>
-      <li>About</li>
-      <li>Contact</li>
-      <span class="nameHeader"> Addison Chen </span>
+      <a href="#1">Summary </a>
+      <a href="#2">Portfolio </a>
+      <a href="#3">About </a>
+      <a href="#4">Contact </a>
+      <span class="nameHeader"> ADDISON CHEN </span>
     </ul>
 
     <div class="banner">
@@ -31,12 +31,16 @@
       <p class="bannerGreeting"> IT'S NICE TO MEET YOU! </p>
     </div>
 
-    <div class="services">
-
+    <div id="1" class="message">
+      <h4 class="title"> Summary </h4>
+      <p class="summary">
+        <span class="quotation">&quot;</span>
+        Developer who wants to bring wonderul ideas to life through code. I'm a lifelong sports enthusiast who is currently looking for opportunities to apply my experience with Ruby on Rails, JavaScript, jQuery, Node.js, Angular.js, HTML5, CSS3, Mongo DB, and SQL databases.
+        <span class="quotation">&quot;</span>
+      </p>
     </div>
 
-    <div class="portfolioContainer">
-
+    <div id="2" class="portfolioContainer">
         <h4 class="title"> Portfolio </h4>
 
         <!-- PROJECT 1 MODULE -->
@@ -163,8 +167,50 @@
 
     </div> <!-- CLOSE PORTFOLIO CONTAINER -->
 
-    <div class="profile">
+    <div id="3" class="profile">
       <h4 class="title"> About Me </h4>
+
+      <!-- TIMELINE 1 -->
+      <div class="timeline">
+        <img class="timelinePhoto" src="./bovard.jpeg" alt="image of USC" />
+          <div class="timelineInfo">
+          <h5 class="timelineHeader">University of Southern California</h5>
+          <h5 class="timelineHeader"> 2010 - 2013 </h5>
+          <p class="timelineDetail">
+            Graduated USC with a B.S. in Business Administration. It was then I found a passion for planning and organizational management.
+          </p>
+        </div>
+      </div>
+
+      <div class="verticalLine"></div>
+
+      <!-- TIMELINE 2 -->
+      <div class="timeline">
+        <img class="timelinePhoto" src="./ubs.jpg" alt="image of financial planning" />
+          <div class="timelineInfo timelineInfoLeft">
+          <h5 class="timelineHeader">UBS Wealth Management</h5>
+          <h5 class="timelineHeader"> 2013 - 2015 </h5>
+          <p class="timelineDetail">
+            Designed estate and financial planning presentations for advisors to use when reviewing client wealth transfer strategies.
+          </p>
+        </div>
+      </div>
+
+      <div class="verticalLine"></div>
+
+      <!-- TIMELINE 3 -->
+      <div class="timeline">
+        <img class="timelinePhoto" src="./gapic.jpg" alt="image of General Assembly" />
+          <div class="timelineInfo">
+          <h5 class="timelineHeader">General Assembly</h5>
+          <h5 class="timelineHeader"> 2015 - 2015 </h5>
+          <p class="timelineDetail">
+            Learned to become a Full Stack Developer concentrating on the MEAN and Ruby on Rails stack.
+          </p>
+        </div>
+      </div>
+
+      <div class="verticalLine"></div>
 
       <img class="profilePic" src="./profile.jpg" alt="image of Addison" />
       <h5 class="name">Addison Chen</h5>
@@ -175,15 +221,21 @@
       </div>
     </div>
 
-    <div class="contactContainer">
+    <div id="4" class="contactContainer">
 
         <div style="display:inline-block; width: 380px; text-align:left; margin: 55px 80px 0 auto; vertical-align:top;">
           <h4 style="font-size: 35px; color:white; margin-bottom:5px;">Thank you for dropping in!</h4>
           <p style="font-size:20px; color:white; line-height:25px; margin-bottom:40px;line-height:30px;">
-            Please feel free to contact me if you have any questions regarding the projects above or about any opportunities you believe would be a good fit.
+            Please feel free to contact me if you have any questions regarding the projects above.
           </p>
+
           <p style="font-size: 20px; color:white;line-height: 25px; border-left: 7px solid rgba(0,150,136,1); padding-left: 20px;">
-            “Good friends, good books, and a sleepy conscience: this is the ideal life.” <br><br>-Mark Twain
+            “Programs must be written for people to read, and only incidentally for machines to execute.” <br><br>- Harold Abelson
+          </p>
+          <br>
+          <br>
+          <p style="font-size: 20px; color:white;line-height: 25px; border-left: 7px solid rgba(0,150,136,1); padding-left: 20px;">
+            “Good friends, good books, and a sleepy conscience: this is the ideal life.” <br><br>- Mark Twain
           </p>
         </div>
 

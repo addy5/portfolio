@@ -11,7 +11,7 @@ a {
 }
 
 .navigationBar{
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(42,42,42,1);
   height: 50px;
   width:100%;
   text-align: right;
@@ -22,15 +22,15 @@ a {
 .nameHeader{
   color: white;
   position: absolute;
-  left: 40px;
+  left: 7%;
   line-height: 50px;
   font-size: 26px;
 }
 
-.navigationBar li{
+.navigationBar > a{
   font-size: 20px;
   color: white;
-  height: 50px;
+  height: 48px;
   line-height: 50px;
   list-style: none;
   display: inline-block;
@@ -38,6 +38,17 @@ a {
   position: relative;
   left:-50px;
   font-weight: 300;
+  z-index: 1;
+}
+
+.triangle{
+  position: absolute;
+  left:50%;
+  bottom: -20px;
+  margin-left: -3px;
+  font-size: 8px;
+  /*color: rgba(0,150,136,1);*/
+  color: white;
 }
 
 .banner{
@@ -63,6 +74,24 @@ a {
   top: 210px;
 }
 
+.message{
+  width: 100%;
+  max-width: 800px;
+  font-size: 28px;
+  margin: 0 auto;
+  padding: 50px 0;
+  line-height: 33px;
+}
+
+.summary{
+  font-weight: 300;
+}
+
+.quotation{
+  font-size: 30px;
+  color: rgba(0,150,136,1);
+}
+
 .title{
   font-size: 36px;
   color: grey;
@@ -86,7 +115,7 @@ a {
   top: 0;
   bottom: 25%;
   width: 100%;
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgba(0,0,0,0.81);
   color: white;
   text-align: left;
   font-size: 17px;
@@ -156,17 +185,69 @@ a {
   padding: 40px 0;
 }
 
+.timeline{
+  position: relative;
+  /*border: 1px solid grey;*/
+  /*height: 300px;*/
+  text-align: center;
+}
+
+.timelinePhoto{
+  width: 160px;
+  border-radius: 50%;
+  border: 10px solid rgba(243,243,243,1);
+  margin-left: 30%;
+}
+
+.timelineInfo{
+  width: 30%;
+  height: 130px;
+  display: inline-block;
+  /*border: 1px solid grey;*/
+  vertical-align: top;
+  margin: 4% 0 0 1%;
+}
+
+.timelineInfoLeft{
+  position: relative;
+  left: -45%;
+}
+
+.timelineHeader{
+  font-size: 18px;
+  color: black;
+  line-height: 21px;
+  text-align: left;
+}
+
+.timelineDetail{
+  width: 70%;
+  font-size: 15px;
+  line-height: 18px;
+  color: grey;
+  text-align: left;
+}
+
+.verticalLine {
+  position: relative;
+  left: 50%;
+  height: 110px;
+  width: 2px;
+  margin-left: -2px;
+  background-color: rgba(100,100,100,0.3);
+  border: none;
+}
 
 .profile{
   width: 100%;
-  height: 550px;
+  max-width: 1000px;
+  height: 1320px;
   padding-top: 30px;
+  margin: 0 auto;
 }
 
 .profilePic{
-  width: 20%;
-  max-width: 260px;
-  min-width: 185px;
+  width: 210px;
   border-radius: 50%;
   border: 10px solid rgba(243,243,243,1);
   margin-bottom: 20px;
