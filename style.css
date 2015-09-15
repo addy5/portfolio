@@ -6,7 +6,7 @@ body{
 }
 
 a {
-  color: inherit;
+  color: white;
   text-decoration: inherit;
 }
 
@@ -29,8 +29,8 @@ a {
 
 .navigationBar > a{
   font-size: 20px;
-  color: white;
-  height: 48px;
+  /*color: white;*/
+  height: 42px;
   line-height: 50px;
   list-style: none;
   display: inline-block;
@@ -39,6 +39,11 @@ a {
   left:-50px;
   font-weight: 300;
   z-index: 1;
+}
+
+.active{
+  color: rgba(0,150,136,1);
+  border-bottom: 2px solid rgba(0,150,136,1);
 }
 
 .triangle{
@@ -182,7 +187,7 @@ a {
 
 .portfolioContainer{
   background-color: rgba(243,243,243,1);
-  padding: 40px 0;
+  padding: 50px 0;
 }
 
 .timeline{
@@ -242,7 +247,7 @@ a {
   width: 100%;
   max-width: 1000px;
   height: 1320px;
-  padding-top: 30px;
+  padding-top: 50px;
   margin: 0 auto;
 }
 
@@ -256,6 +261,7 @@ a {
 .name{
   font-size:21px;
   margin-bottom: 6px;
+  color: black;
 }
 
 .role{
@@ -275,8 +281,9 @@ a {
 
 .contactContainer{
   background-color: rgba(42,42,42,1);
-  padding-bottom: 30px;
+  margin-top: 25px;
   text-align: center;
+  padding: 20px 0 38px 0;
 }
 
 .contactBox{
@@ -341,4 +348,12 @@ a {
   border-radius: 5px;
   border: none;
   margin: 10px 10px 30px 17%;
+}
+
+footer{
+  height: 50px;
+  background-color: rgba(28,28,28,0.9);
+  color: grey;
+  font-size: 18px;
+  line-height: 50px;
 }
