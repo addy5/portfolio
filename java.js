@@ -72,4 +72,29 @@ $(document).ready(function(){
     });
 
 
+    var submitMessage = $('.submitMessage');
+    var guestName = $('.guestName');
+    var guestEmail = $('.guestEmail');
+    var guestMessage = $('.guestMessage');
+
+    submitMessage.on('click', function(){
+      var sendMssage = {
+        name: guestName.val(),
+        email: guestEmail.val(),
+        message: guestMessage.val()
+      };
+
+      $.ajax({
+        method: 'post',
+        url: 'https://messageaddy.herokuapp.com/messages/',
+        data: JSON.stringify(sendMssage),
+        contentType: 'application/json; charset=UTF-8',
+        dataType : 'json',
+        success: function(data){
+            console.log(data);
+        }
+      }); // END AJAX FUNCTION
+
+    }); //END SEND GUEST MESSAGE LISTENER AND FUNCTION
+
 });

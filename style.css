@@ -84,7 +84,7 @@ a {
   max-width: 800px;
   font-size: 28px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 80px 0;
   line-height: 33px;
 }
 
@@ -319,6 +319,9 @@ a {
   padding-left: 10px;
   border: none;
   border-radius: 3px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
 }
 
 .contactBox label{
@@ -337,6 +340,9 @@ a {
   border-radius: 5px;
   font-size: 14px;
   padding: 5px 5px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 15px;  
 }
 
 .contactBox button{
