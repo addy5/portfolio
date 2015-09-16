@@ -76,6 +76,17 @@ $(document).ready(function(){
     var guestName = $('.guestName');
     var guestEmail = $('.guestEmail');
     var guestMessage = $('.guestMessage');
+    var messageConfirm = $('.messageConfirm');
+    var backgroundModal = $('.backgroundModal');
+
+    function hideConfirmation(){
+      backgroundModal.fadeOut('slow');
+      messageConfirm.fadeOut('slow');
+      messageConfirm.val('');
+      guestName.val('');
+      guestEmail.val('');
+      guestMessage.val('');
+    }
 
     submitMessage.on('click', function(){
       var sendMssage = {
@@ -83,6 +94,10 @@ $(document).ready(function(){
         email: guestEmail.val(),
         message: guestMessage.val()
       };
+
+      backgroundModal.fadeIn();
+      messageConfirm.text("sending...");
+      messageConfirm.fadeIn();
 
       $.ajax({
         method: 'post',
@@ -92,6 +107,9 @@ $(document).ready(function(){
         dataType : 'json',
         success: function(data){
             console.log(data);
+            messageConfirm.text('Message Sent!');
+            setTimeout(hideConfirmation,2500);
+
         }
       }); // END AJAX FUNCTION
 
