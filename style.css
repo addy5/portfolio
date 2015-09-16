@@ -11,7 +11,7 @@ a {
 }
 
 .navigationBar{
-  background-color: rgba(42,42,42,1);
+  background-color: rgba(42,42,42,0);
   height: 50px;
   width:100%;
   text-align: right;
