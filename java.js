@@ -15,7 +15,7 @@ $(document).ready(function(){
         }
 
         $('.target').each(function() {
-            if(scroll_pos + 53 >= $(this).position().top) {
+            if(scroll_pos + 60 >= $(this).position().top) {
                 var id = $(this).attr('id');
                 $('.navigationBar a').removeClass('active');
                 $('.navigationBar a[href=#'+ id +']').addClass('active');
