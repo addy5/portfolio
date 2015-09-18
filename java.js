@@ -1,5 +1,68 @@
 $(document).ready(function(){
-  console.log('jquery');
+
+    var bannerGreeting = $('.bannerGreeting');
+    // TYPE GREETING:
+    var typeingSpeed = 150;
+    var initialDelay = 650;
+
+    setTimeout(function(){
+      bannerGreeting.text("I");
+    }, typeingSpeed*1+initialDelay);
+    setTimeout(function(){
+      bannerGreeting.text("IT");
+    }, typeingSpeed*2+initialDelay);
+    setTimeout(function(){
+      bannerGreeting.text("IT'");
+    }, typeingSpeed*3+initialDelay);
+    setTimeout(function(){
+      bannerGreeting.text("IT'S ");
+    }, typeingSpeed*4+initialDelay);
+    setTimeout(function(){
+      bannerGreeting.text("IT'S N");
+    }, typeingSpeed*5+initialDelay);
+    setTimeout(function(){
+      bannerGreeting.text("IT'S NI");
+    }, typeingSpeed*6+initialDelay);
+    setTimeout(function(){
+      bannerGreeting.text("IT'S NIC");
+    }, typeingSpeed*7+initialDelay);
+    setTimeout(function(){
+      bannerGreeting.text("IT'S NICE ");
+    }, typeingSpeed*8+initialDelay);
+    setTimeout(function(){
+      bannerGreeting.text("IT'S NICE T");
+    }, typeingSpeed*9+initialDelay);
+    setTimeout(function(){
+      bannerGreeting.text("IT'S NICE TO");
+    }, typeingSpeed*10+initialDelay);
+    setTimeout(function(){
+      bannerGreeting.text("IT'S NICE TO ");
+    }, typeingSpeed*11+initialDelay);
+    setTimeout(function(){
+      bannerGreeting.text("IT'S NICE TO M");
+    }, typeingSpeed*12+initialDelay);
+    setTimeout(function(){
+      bannerGreeting.text("IT'S NICE TO ME");
+    }, typeingSpeed*13+initialDelay);
+    setTimeout(function(){
+      bannerGreeting.text("IT'S NICE TO MEE");
+    }, typeingSpeed*14+initialDelay);
+    setTimeout(function(){
+      bannerGreeting.text("IT'S NICE TO MEET ");
+    }, typeingSpeed*15+initialDelay);
+    setTimeout(function(){
+      bannerGreeting.text("IT'S NICE TO MEET Y");
+    }, typeingSpeed*16+initialDelay);
+    setTimeout(function(){
+      bannerGreeting.text("IT'S NICE TO MEET YO");
+    }, typeingSpeed*17+initialDelay);
+    setTimeout(function(){
+      bannerGreeting.text("IT'S NICE TO MEET YOU");
+    }, typeingSpeed*18+initialDelay);
+    setTimeout(function(){
+      bannerGreeting.text("IT'S NICE TO MEET YOU!");
+    }, typeingSpeed*19+initialDelay);
+
     var navigationBar = $('.navigationBar');
     var scroll_pos = 0;
     var triangle = $('.triangle');
