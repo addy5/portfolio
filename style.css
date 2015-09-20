@@ -61,6 +61,7 @@ a {
   height: 550px;
   background-image: url('./baseFilter.jpg');
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .welcome{
