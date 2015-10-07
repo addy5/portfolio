@@ -88,9 +88,18 @@ $(document).ready(function(){
         });
     }); //END WINDOW SCROLL LISTENER
 
+    // NAVIGATION BAR HIGHLIGHTER:
     $('.navigationBar a').on('click', function(event) {
       $(this).parent().find('a').removeClass('active');
       $(this).addClass('active');
+    });
+
+    //DOWN ARROW BUTTON AND SCROLL TO SUMMARY FUNCTION:
+    var downArrow = $('.downArrow');
+    downArrow.click(function() {
+      $('html, body').animate({
+          scrollTop: $("#1").offset().top
+      }, 2000);
     });
 
 
